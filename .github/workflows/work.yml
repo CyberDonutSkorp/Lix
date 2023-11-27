@@ -25,6 +25,9 @@ jobs:
       - run: docker build -t ghcr.io/cyberdonutskorp/pyton-app:latest ./Python
       - run: docker push ghcr.io/cyberdonutskorp/pyton-app:latest
 
+      - run: docker build -t ghcr.io/cyberdonutskorp/node-app:latest ./Js
+      - run: docker push ghcr.io/cyberdonutskorp/node-app:latest
+
   deploy:
     runs-on: ubuntu-latest
     needs: [build]
