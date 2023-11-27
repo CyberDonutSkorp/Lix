@@ -23,7 +23,7 @@ jobs:
             password: ${{ secrets.GITHUB_TOKEN }}
       
       - run: docker build -t ghcr.io/cyberdonutskorp/pyton-app:latest .
-      - run: docker ghcr.io/cyberdonutskorp/pyton-app:latest
+      - run: docker push ghcr.io/cyberdonutskorp/pyton-app:latest
 
   deploy:
     runs-on: ubuntu-latest
