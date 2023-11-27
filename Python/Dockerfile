@@ -1,7 +1,7 @@
 FROM python:latest
 
-WOEKDIR /app
+WORKDIR /app
 
 COPY python.py
 
-RUN python python.py
+RUN ["python", "python.py"]
